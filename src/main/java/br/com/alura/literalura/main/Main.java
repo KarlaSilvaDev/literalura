@@ -60,11 +60,13 @@ public class Main {
                 case 3:
                     listRegisteredAuthors();
                     break;
+                case 4:
+                    listLivingAuthorsInAGivenYear();
+                    break;
                 case 0:
                     System.out.println("Encerrando a aplicação...");
                 default:
                     System.out.println("Opção inválida.");
-
             }
         }
     }
@@ -139,6 +141,32 @@ public class Main {
             System.out.println("Nenhum autor foi registrado até o momento.");
         }else{
             authors.forEach(System.out::println);
+        }
+    }
+
+    private void listLivingAuthorsInAGivenYear(){
+        int year = 0;
+
+        while(year <= 0){
+            System.out.println("Digite o ano desejado:");
+            year = scanner.nextInt();
+            scanner.nextLine();
+
+            if (year <= 0 ) {
+                System.out.println("Ano inválido.");
+            }
+        }
+
+        List<Author> authors = authorRepository.findAuthorsAliveInYear(year);
+
+        if (authors.isEmpty()){
+            System.out.println("Nenhum autor encontrado.");
+        }else{
+            System.out.println("Autores vivos em um determinado ano:");
+            authors.forEach(System.out::println);
+            System.out.println("============== TOTAL DE AUTORES VIVOS ==============");
+            System.out.println("Total de autores vivos: " + authors.size());
+            System.out.println("====================================================");
         }
     }
 
