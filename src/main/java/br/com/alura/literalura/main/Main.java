@@ -63,6 +63,9 @@ public class Main {
                 case 4:
                     listLivingAuthorsInAGivenYear();
                     break;
+                case 5:
+                    listBooksInAParticularLanguage();
+                    break;
                 case 0:
                     System.out.println("Encerrando a aplicação...");
                 default:
@@ -168,6 +171,21 @@ public class Main {
             System.out.println("Total de autores vivos: " + authors.size());
             System.out.println("====================================================");
         }
+    }
+
+    private void listBooksInAParticularLanguage(){
+        System.out.println("Digite o código do idioma desejado: ");
+        String languageCode = scanner.nextLine();
+
+        List<Book> books = bookRepository.findByLanguageContainingIgnoreCase(languageCode);
+
+        if (books.isEmpty()){
+            System.out.println("Não foram encontrados livros no idioma mencionado.");
+        }else{
+            books.forEach(System.out::println);
+            System.out.println("Total de livros encontrados: " + books.size());
+        }
+
     }
 
 }
