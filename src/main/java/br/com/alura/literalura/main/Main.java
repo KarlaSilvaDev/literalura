@@ -9,6 +9,7 @@ import br.com.alura.literalura.repository.BookRepository;
 import br.com.alura.literalura.service.ApiConsumer;
 import br.com.alura.literalura.service.DataConverter;
 
+import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
@@ -52,6 +53,12 @@ public class Main {
             switch (option) {
                 case 1:
                     addBookData();
+                    break;
+                case 2:
+                    listRegisteredBooks();
+                    break;
+                case 3:
+                    listRegisteredAuthors();
                     break;
                 case 0:
                     System.out.println("Encerrando a aplicação...");
@@ -116,5 +123,23 @@ public class Main {
         return author.orElse(null);
     }
 
+    private void listRegisteredBooks(){
+        List<Book> books = bookRepository.findAll();
+
+        if (books.isEmpty()){
+            System.out.println("Nenhum livro foi registrado até o momento.");
+        }else{
+            books.forEach(System.out::println);
+        }
+    }
+
+    private void listRegisteredAuthors(){
+        List<Author> authors = authorRepository.findAll();
+        if (authors.isEmpty()){
+            System.out.println("Nenhum autor foi registrado até o momento.");
+        }else{
+            authors.forEach(System.out::println);
+        }
+    }
 
 }
