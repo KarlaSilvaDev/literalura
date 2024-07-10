@@ -1,6 +1,21 @@
 ![Imgur](https://i.imgur.com/s7BLsQO.png)
 
-# Literalura
+<h1 align = "center">
+  Literalura
+</h1>
+<p align="center">
+  <a href="#descrição-do-projeto">Descrição do Projeto</a> •
+  <a href="#funcionalidades">Funcionalidades</a> •
+  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
+  <a href="#como-executar-o-projeto">Como Executar o Projeto</a> •
+  <a href="#screenshots">Screenshots</a> •
+  <a href="#contribuição">Contribuição</a> •
+  <a href="#contato">Contato</a>
+</p>
+
+<br>
+
+## Descrição do Projeto
 
 Literalura consiste em uma aplicação para a construção de um catálogo de livros utilizando Java, Spring, PostgreSQL e a API Gutendex, que possui dados de mais de 70 mil livros.
 
