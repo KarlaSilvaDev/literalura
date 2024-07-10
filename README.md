@@ -14,7 +14,7 @@ A interação é feita inteiramente via linha de comando. Esta aplicação permi
 4. **Listar autores vivos em um determinado ano**: Lista os autores vivos em um ano especificado pelo usuário.
 5. **Listar livros em um determinado idioma**: Lista livros registrados no banco de dados em um idioma especificado via código do idioma (Se for informado o código "en", serão listados os livros em inglês registrados no banco de dados).
 
-## Tecnologia Utilizadas 
+## Tecnologias Utilizadas 
 
 - Java 21
 - Spring Boot
