@@ -63,7 +63,7 @@ Menu da aplicação:
 
 ![Imgur](https://i.imgur.com/QmZjzzj.png)
 
-**Opção 3:** Listrar autores registrados
+**Opção 3:** Listar autores registrados
 
 ![Imgur](https://i.imgur.com/RF5WVF8.png)
 
@@ -77,10 +77,27 @@ Menu da aplicação:
 
 ## Contribuição
 
-Se você deseja contribuir para o projeto, siga os passos abaixo:
+Se deseja contribuir para o projeto, siga os passos abaixo:
 
-1. Fork o repositório.
-2. Crie uma nova branch: `git checkout -b minha-feature`.
-3. Faça suas alterações e commite-as: `git commit -m 'Minha nova feature'`.
-4. Envie para o repositório original: `git push origin minha-feature`.
-5. Abra um Pull Request.
+1. Faça um fork deste repositório
+   
+2. Crie uma branch para sua feature:
+    ```bash
+     git checkout -b feature/nova-feature
+    ```
+    
+3. Faça commit das suas alterações:
+    ```bash
+    git commit -m "Adiciona nova feature"
+    ```
+    
+4. Envie as alterações para o seu fork:
+    ```bash
+    git push origin feature/nova-feature
+    ```
+    
+5. Abra um pull request neste repositório
+
+## Contato
+
+Caso tenha alguma dúvida ou sugestão, entre em contato pelo email karlasilvaeng@gmail.com.
