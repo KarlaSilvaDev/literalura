@@ -23,6 +23,8 @@ A interação é feita inteiramente via linha de comando. Esta aplicação permi
 
 ![Imgur](https://i.imgur.com/9QMgZcH.png)
 
+<a href="#--literalura">Voltar ao topo</a>
+
 
 ## Funcionalidades
 
@@ -32,6 +34,8 @@ A interação é feita inteiramente via linha de comando. Esta aplicação permi
 4. **Listar autores vivos em um determinado ano**: Lista os autores vivos em um ano especificado pelo usuário.
 5. **Listar livros em um determinado idioma**: Lista livros registrados no banco de dados em um idioma especificado via código do idioma (Se for informado o código "en", serão listados os livros em inglês registrados no banco de dados).
 
+<a href="#--literalura">Voltar ao topo</a>
+
 ## Tecnologias Utilizadas 
 
 - Java 21
@@ -40,6 +44,8 @@ A interação é feita inteiramente via linha de comando. Esta aplicação permi
 - PostgreSQL
 - Gutendex API
 - Maven
+
+<a href="#--literalura">Voltar ao topo</a>
 
 ## Como executar o projeto 
 
@@ -67,6 +73,8 @@ A interação é feita inteiramente via linha de comando. Esta aplicação permi
     mvn spring-boot:run
     ```
 
+<a href="#--literalura">Voltar ao topo</a>
+
 ## Screenshots
 
 Menu da aplicação:
@@ -93,6 +101,8 @@ Menu da aplicação:
 
 ![Imgur](https://i.imgur.com/D9653Fr.png)
 
+<a href="#--literalura">Voltar ao topo</a>
+
 ## Contribuição
 
 Se deseja contribuir para o projeto, siga os passos abaixo:
@@ -115,6 +125,8 @@ Se deseja contribuir para o projeto, siga os passos abaixo:
     ```
     
 5. Abra um pull request neste repositório
+
+<a href="#--literalura">Voltar ao topo</a>
 
 ## Contato
 
