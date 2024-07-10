@@ -48,3 +48,39 @@ A interação é feita inteiramente via linha de comando. Esta aplicação permi
     ```bash
     mvn spring-boot:run
     ```
+
+## Screenshots
+
+Menu da aplicação:
+
+![Imgur](https://i.imgur.com/UlNhCUL.png)
+
+**Opção 1:** Buscar livro pelo título:
+
+![Imgur](https://i.imgur.com/3XVgDFY.png)
+
+**Opção 2:** Listar livros registrados
+
+![Imgur](https://i.imgur.com/QmZjzzj.png)
+
+**Opção 3:** Listrar autores registrados
+
+![Imgur](https://i.imgur.com/RF5WVF8.png)
+
+**Opção 4:** Listar autores vivos em um determinado ano
+
+![Imgur](https://i.imgur.com/w5vTUbe.png)
+
+**Opção 5:** Listar livros em um determinado idioma
+
+![Imgur](https://i.imgur.com/D9653Fr.png)
+
+## Contribuição
+
+Se você deseja contribuir para o projeto, siga os passos abaixo:
+
+1. Fork o repositório.
+2. Crie uma nova branch: `git checkout -b minha-feature`.
+3. Faça suas alterações e commite-as: `git commit -m 'Minha nova feature'`.
+4. Envie para o repositório original: `git push origin minha-feature`.
+5. Abra um Pull Request.
