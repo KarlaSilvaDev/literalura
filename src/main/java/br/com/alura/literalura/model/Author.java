@@ -5,6 +5,7 @@ import jakarta.persistence.*;
 
 import java.util.LinkedHashSet;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Entity(name = "Author")
 @Table(name = "authors")
@@ -79,6 +80,7 @@ public class Author {
                 "Autor:  " + name + '\n' +
                 "Ano de nascimento: " + (birthYear != null ? birthYear.toString() : "Desconhecido") + '\n' +
                 "Ano de falecimento: " + (deathYear != null ? deathYear.toString() : "Desconhecido") + '\n' +
-                "===================================================" + '\n';
+                "Livros: " + books.stream().map(b -> b.getTitle()).collect(Collectors.toSet()) + '\n' +
+                "===================================================";
     }
 }

@@ -12,13 +12,14 @@ import br.com.alura.literalura.service.DataConverter;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
+import java.util.Set;
+import java.util.stream.Collectors;
 
 public class Main {
     private final Scanner scanner = new Scanner(System.in);
     private final ApiConsumer apiConsumer = new ApiConsumer();
     private final String ADDRESS = "https://gutendex.com/books/?search=";
     private final DataConverter converter = new DataConverter();
-    private String bookTitle;
     private BookRepository bookRepository;
     private AuthorRepository authorRepository;
 
@@ -68,6 +69,7 @@ public class Main {
                     break;
                 case 0:
                     System.out.println("Encerrando a aplicação...");
+                    break;
                 default:
                     System.out.println("Opção inválida.");
             }
@@ -75,7 +77,6 @@ public class Main {
     }
 
     private void addBookData() {
-        System.out.println(1);
         Book book = searchBookByTitleWeb();
 
         if (book == null){
@@ -140,10 +141,15 @@ public class Main {
 
     private void listRegisteredAuthors(){
         List<Author> authors = authorRepository.findAll();
+
         if (authors.isEmpty()){
             System.out.println("Nenhum autor foi registrado até o momento.");
         }else{
-            authors.forEach(System.out::println);
+            authors.forEach(a -> {
+                Set<Book> authorBooks = bookRepository.findByAuthor(a);
+                a.setBooks(authorBooks);
+                System.out.println(a);
+            });
         }
     }
 
@@ -174,6 +180,13 @@ public class Main {
     }
 
     private void listBooksInAParticularLanguage(){
+        System.out.println("""
+                Códigos:
+                es - espanhol
+                en - inglês
+                fr - francês
+                pt - português
+                """);
         System.out.println("Digite o código do idioma desejado: ");
         String languageCode = scanner.nextLine();
 
