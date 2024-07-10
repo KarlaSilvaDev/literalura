@@ -4,9 +4,9 @@
   Literalura
 </h1>
 <p align="center">
-  <a href="#descrição-do-projeto">Descrição do Projeto</a> •
+  <a href="#descrição-do-projeto">Descrição</a> •
   <a href="#funcionalidades">Funcionalidades</a> •
-  <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a> •
+  <a href="#tecnologias-utilizadas">Tecnologias</a> •
   <a href="#como-executar-o-projeto">Como Executar o Projeto</a> •
   <a href="#screenshots">Screenshots</a> •
   <a href="#contribuição">Contribuição</a> •
